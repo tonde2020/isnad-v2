@@ -1,0 +1,135 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+:root {
+    --font-family: 'Cairo', sans-serif;
+    --lux-gold: #d4af37;
+    --lux-gold-soft: color-mix(in srgb, var(--lux-gold) 28%, transparent);
+    --lux-brown: #3d2b1f;
+    --lux-brown-soft: color-mix(in srgb, var(--lux-brown) 12%, transparent);
+}
+
+.fi-body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(
+        165deg,
+        #fffdf8 0%,
+        #faf4ea 38%,
+        #f3ebe0 100%
+    );
+}
+
+.dark .fi-body {
+    background: linear-gradient(
+        165deg,
+        oklch(0.17 0.02 55) 0%,
+        oklch(0.14 0.018 50) 100%
+    );
+}
+
+/* واجهة عربية: اجعلها ltr إن كان مشروعك إنجليزي فقط */
+.fi-simple-main-ctn,
+.fi-page,
+.fi-sidebar,
+.fi-topbar {
+    direction: rtl;
+}
+
+.fi-section:not(.fi-section-not-contained) {
+    border-radius: 1.25rem;
+    border: 1px solid var(--lux-gold-soft);
+    background: color-mix(in srgb, #fffefc 88%, transparent);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 55px -32px var(--lux-brown-soft);
+}
+
+.dark .fi-section:not(.fi-section-not-contained) {
+    background: color-mix(in srgb, oklch(0.22 0.02 55) 75%, transparent);
+    border-color: color-mix(in srgb, var(--lux-gold) 22%, transparent);
+    box-shadow: 0 18px 48px -28px rgba(0, 0, 0, 0.55);
+}
+
+.fi-wi-stats-overview-stat {
+    border-radius: 1.25rem !important;
+    border: 1px solid var(--lux-gold-soft) !important;
+    background: linear-gradient(
+        145deg,
+        color-mix(in srgb, #fffefc 92%, transparent),
+        color-mix(in srgb, #fdf6e8 88%, transparent)
+    ) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 18px 46px -30px var(--lux-brown-soft);
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.fi-wi-stats-overview-stat:hover {
+    box-shadow: 0 22px 55px -26px color-mix(in srgb, var(--lux-gold) 35%, transparent);
+    transform: translateY(-1px);
+}
+
+.dark .fi-wi-stats-overview-stat {
+    background: linear-gradient(
+        145deg,
+        color-mix(in srgb, oklch(0.24 0.02 55) 90%, transparent),
+        color-mix(in srgb, oklch(0.2 0.018 52) 88%, transparent)
+    ) !important;
+    border-color: color-mix(in srgb, var(--lux-gold) 25%, transparent) !important;
+}
+
+.fi-btn.fi-color:not(.fi-outlined) {
+    letter-spacing: 0.02em;
+}
+
+.fi-btn.fi-color-primary:not(.fi-outlined) {
+    box-shadow: 0 10px 28px -14px color-mix(in srgb, var(--lux-gold) 55%, transparent);
+}
+
+.fi-btn.fi-color-primary:not(.fi-outlined):hover {
+    box-shadow: 0 14px 34px -12px color-mix(in srgb, var(--lux-gold) 65%, transparent);
+}
+
+.fi-sidebar {
+    border-inline-start: 1px solid var(--lux-gold-soft);
+}
+
+@media (max-width: 1023px) {
+    .fi-sidebar {
+        background: linear-gradient(
+            165deg,
+            #fffdf8 0%,
+            #faf4ea 38%,
+            #f3ebe0 100%
+        );
+    }
+
+    .dark .fi-sidebar {
+        background: linear-gradient(
+            165deg,
+            oklch(0.17 0.02 55) 0%,
+            oklch(0.14 0.018 50) 100%
+        );
+    }
+}
+
+.fi-topbar {
+    border-block-end: 1px solid var(--lux-gold-soft);
+}
+
+@keyframes iqra-weather-bounce {
+    0%,
+    100% {
+        transform: translateY(-3px);
+    }
+
+    50% {
+        transform: translateY(3px);
+    }
+}
+
+.iqra-weather-icon {
+    animation: iqra-weather-bounce 3s ease-in-out infinite;
+}
