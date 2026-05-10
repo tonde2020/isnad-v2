@@ -1,59 +1,30 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+إسناد منصة رقمية تساعد المرضى على بناء سجلهم الطبي مدى الحياة، وحفظ الروشتات، التحاليل، التقارير، وصور الأشعة في ملف صحي منظم، مع إمكانية مشاركة الملف مع الطبيب عبر رابط مؤقت آمن أو من خلال بوابة داخل المنصة برقم المريض. المشروع مفتوح ومهدى للسودان، ومتاح للشباب السوداني للمساهمة في تطويره.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+إسناد — منصة لبناء التاريخ الطبي للمريض
 
-## About Laravel
+إسناد هو مشروع برمجي مفتوح يهدف إلى مساعدة المرضى والمستخدمين على بناء وحفظ تاريخهم الطبي عبر الزمن، بحيث يكون لكل مريض ملف صحي رقمي منظم يحتوي على بياناته الأساسية، أمراضه المزمنة، أدويته الحالية، الحساسية، الفحوصات، الروشتات، صور الأشعة، والتقارير الطبية.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+جاءت فكرة إسناد من واقع الحاجة الملحة في السودان، خاصة في ظروف النزوح وفقدان الملفات الورقية أو تعذر الوصول إلى المستشفيات والسجلات الطبية القديمة. كثير من المرضى ينتقلون من طبيب إلى آخر دون أن تكون لديهم معلومات دقيقة عن الأدوية التي يستخدمونها أو الأمراض المزمنة التي يعانون منها أو نتائج الفحوصات السابقة. لذلك يعمل إسناد على تحويل التاريخ الطبي من أوراق متفرقة إلى سجل رقمي آمن ومنظم يمكن الرجوع إليه في أي وقت.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+ماذا يقدم إسناد؟
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+يساعد إسناد المريض على إنشاء ملف صحي كامل مرتبط بالتواريخ، بحيث لا تكون المعلومات مجرد بيانات ثابتة، بل سجل زمني يوضح متى تم تشخيص المرض، متى بدأ استخدام الدواء، متى تم رفع تحليل أو صورة أشعة، ومتى تمت مشاركة الملف مع طبيب.
 
-## Learning Laravel
+يمكن للمريض رفع ملفاته الطبية مثل الروشتات، نتائج التحاليل، التقارير الطبية، وصور الأشعة، ليتم حفظها ضمن ملفه الصحي الخاص. كما يمكنه مشاركة ملفه مع الطبيب عبر رابط مؤقت آمن، أو من خلال بوابة داخل المنصة باستخدام رقم المريض، مما يسهل على الطبيب الوصول السريع إلى المعلومات المهمة دون إجراءات معقدة.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+الخصوصية والأمان
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+يركز المشروع على حماية خصوصية المرضى. فالبيانات الطبية لا يجب أن تكون متاحة لأي شخص بدون إذن. لذلك يعتمد إسناد على فكرة الروابط المؤقتة، وسجلات الوصول، وصلاحيات منفصلة بين المريض والطبيب والإدارة. الهدف أن يحتفظ المريض بالتحكم في ملفه، وأن تتم مشاركة البيانات الطبية عند الحاجة فقط.
 
-## Laravel Sponsors
+مؤشرات صحية مجمعة
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+إلى جانب خدمة المريض والطبيب، يمكن لإسناد أن يساعد الجهات الصحية في فهم الواقع الصحي بصورة أفضل من خلال إحصائيات مجمعة لا تكشف هوية المرضى، مثل نسب الأمراض المزمنة، الفئات العمرية، عدد الحالات، وتوزيع الأمراض حسب المناطق. هذه المؤشرات يمكن أن تساعد في التخطيط الصحي واتخاذ قرارات مبنية على بيانات حقيقية.
 
-### Premium Partners
+هدية للسودان
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+إسناد هو مساهمة تقنية مفتوحة ومهداة للسودان، خاصة في ظل الظروف التي جعلت حفظ السجلات الطبية والوصول إليها تحدياً كبيراً لكثير من الناس. المشروع متاح للشباب والمطورين السودانيين للمشاركة في تطويره، تحسينه، وتوسيعه بما يخدم المرضى، الأطباء، والمجتمع.
 
-## Contributing
+الهدف من إسناد ليس فقط بناء برنامج، بل بناء بنية رقمية إنسانية تساعد الناس على حفظ تاريخهم الصحي، وتمنح الطبيب صورة أوضح عن حالة المريض، وتدعم الجهات الصحية بمؤشرات حقيقية دون المساس بخصوصية الأفراد.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Isnad is an open-source patient-centered medical record platform for Sudan, helping patients build a lifelong medical history, upload medical files, and securely share temporary access links with doctors.
