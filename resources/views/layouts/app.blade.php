@@ -24,7 +24,7 @@
 
                     <nav class="flex items-center gap-4 text-sm font-bold text-gray-500">
                         <a href="{{ url('/component-guide') }}" class="transition hover:text-ink">دليل المكونات</a>
-                        <a href="{{ url('/admin') }}" class="transition hover:text-ink">لوحة التحكم</a>
+                        <a href="{{ url('/app') }}" class="transition hover:text-ink">لوحة التطبيق</a>
                     </nav>
                 </div>
             </header>

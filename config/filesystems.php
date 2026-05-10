@@ -30,10 +30,16 @@ return [
 
     'disks' => [
 
+        /*
+         * بدون مفتاح url يستخدم Laravel المسار الافتراضي «/storage» لقرص local مع serve=true،
+         * فيختطف طلبات الصور العامة (/storage/avatars/...) ويعيد 403 لأنها تتطلب توقيعاً.
+         * لذلك نفصل مسار التقديم الخاص عن «/storage» الخاص بقرص public.
+         */
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app/private'),
             'serve' => true,
+            'url' => rtrim(env('APP_URL', 'http://localhost'), '/').'/laravel-private-storage',
             'throw' => false,
             'report' => false,
         ],
@@ -43,6 +49,19 @@ return [
             'root' => storage_path('app/public'),
             'url' => rtrim(env('APP_URL', 'http://localhost'), '/').'/storage',
             'visibility' => 'public',
+            'serve' => true,
+            'throw' => false,
+            'report' => false,
+        ],
+
+        /*
+         * مرفقات طبية خاصة — لا تُعرَض عبر /storage/ العام.
+         * روابط المعاينة في Filament تمرّ بمسار موقّع: medical-private-files.stream
+         */
+        'medical_private' => [
+            'driver' => 'local',
+            'root' => storage_path('app/medical-private'),
+            'serve' => false,
             'throw' => false,
             'report' => false,
         ],

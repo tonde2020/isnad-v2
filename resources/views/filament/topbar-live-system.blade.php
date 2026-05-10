@@ -1,3 +1,4 @@
+@auth
 <div
     x-data="{
         time: '00:00:00',
@@ -60,3 +61,4 @@
         </div>
     </div>
 </div>
+@endauth
